@@ -4,6 +4,12 @@
  */
 
 // Vanilla JavaScript Function
+function sumOfTwo(a, b) {
+	// Code block
+	return a + b;
+}
+
+console.log(sumOfTwo(3, 5));
 
 // Arrow Function With Parameters
 
