@@ -15,15 +15,15 @@ let students = [
         name: 'Adam',
         subjects: ['science', 'maths', 'art'],
         teacher: {science: 'Iris', maths: 'Harry', art: 'Simon'},
-        results: {science: 63, maths: 87, art: 95},
+        results: {science: 84, maths: 97, art: 95},
+    },
+    {
+        name: 'Fran',
+        subjects: ['science', 'english', 'art'],
+        teacher: {science: 'Iris', english: 'Joan', art: 'Simon'},
+        results: {science: 67, english: 87, art: 95},
     }
 ];
 
-let subjects = [...students[0].subjects];
-const update = (item, val) => {
-	
-};
-
-let updateSubjects = update(subjects, 'Electronics');
-console.log(updateSubjects);
-console.log(students[0]);
+const topMaths = students.filter( student => student.results.maths >= 90);
+console.log(topMaths);
